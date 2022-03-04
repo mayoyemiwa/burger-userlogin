@@ -20,7 +20,7 @@ import axios from 'axios';
             }
             else{
                 try{
-                    const result = await axios.post('https://burger-userbackend.herokuapp.com/api/forgetPwd', {email}, {withCredentials:true});
+                    const result = await axios.post('https://userlogin-backend.herokuapp.com/api/forgetPwd', {email}, {withCredentials:true});
                     // const result = await axios.post('http://localhost:5000/api/forgetPwd', {email})
                     
                     console.log(result)

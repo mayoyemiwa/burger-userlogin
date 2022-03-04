@@ -29,7 +29,7 @@ useEffect(()=>{
 
 const load = async() => {
     // const result = await axios.get('http://localhost:5000/api/load', {withCredentials: true})
-    const result = await axios.get('https://burger-userbackend.herokuapp.com/api/load', {withCredentials: true})
+    const result = await axios.get('https://userlogin-backend.herokuapp.com/api/load', {withCredentials: true})
     setUserName(result.data.username)
 }
 

@@ -26,7 +26,7 @@ const Signup = () => {
         // console.log('sign up');
     
              try{
-                const result = await axios.post('https://burger-userbackend.herokuapp.com/api/signup', {signupValues});
+                const result = await axios.post('https://userlogin-backend.herokuapp.com/api/signup', {signupValues});
                 // const result = await axios.post('http://localhost:5000/api/signup', {signupValues})
                 setIsLoding(false);
                 setSignupError({...signupError, username:'', email:'', pwd:'' })
